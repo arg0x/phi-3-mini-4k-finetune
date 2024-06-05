@@ -1,0 +1,10 @@
+python-multipart
+fastapi
+pydantic
+uvicorn
+requests
+uuid
+python-dotenv
+numpy
+ctransformers
+gradio

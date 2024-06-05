@@ -1,0 +1,12 @@
+# Ollama Modelfile
+FROM ~/PATH_TO/phi-3-mini-4k-fine-tune/app/phi-3-mini-4k-emotional-support-gguf-unsloth.Q4_K_M.gguf
+
+# Add your Prompt
+TEMPLATE """
+{{ if .System }}<|system|>
+{{ .System }}<|end|>
+{{ end }}{{ if .Prompt }}<|user|>
+{{ .Prompt }}<|end|>
+{{ end }}<|assistant|>
+{{ .Response }}<|end|>
+"""
